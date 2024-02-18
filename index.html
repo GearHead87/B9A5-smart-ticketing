@@ -15,10 +15,21 @@
     <!-- custom CSS -->
     <link rel="stylesheet" href="styles/style.css">
     <title>Smart Ticketing</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'bus': "linear-gradient(180.00deg, rgba(3, 7, 18, 0.5),rgba(3, 7, 18, 0) 100%), url('images/banner.png')",
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body class="raleway">
-<!-- Header -->
+    <!-- Header -->
     <header>
         <nav>
             <div class="navbar bg-base-100">
@@ -52,13 +63,25 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn border-[#1DD10066] bg-[#1DD1001A] text-[#1DD100] font-bold ml-6">Bus <i><img src="images/bus-icon.png"></i></a>
+                    <a class="btn border-[#1DD10066] bg-[#1DD1001A] text-[#1DD100] font-bold ml-6">Bus <i><img
+                                src="images/bus-icon.png"></i></a>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        
+        <!-- Banner section -->
+        <div class="bg-bus bg-center flex flex-col items-center justify-center mx-36 space-y-6 lg:space-y-9 bg-cover bg-no-repeat px-6 py-6 lg:pt-24 lg:pb-24 rounded-xl lg:rounded-2xl">
+            <h2 class="text-6xl font-extrabold text-white text-center">
+                End-to-End Travel with <br> <span class="text-[#1DD100]">P Paribahan</span>
+            </h2>
+            <p class="text-white">
+                Yes, you can run unit tests and view the results directly within the app. The integrated testing
+                features allow for a streamlined .
+            </p>
+            <button class="btn bg-[#1DD100] font-bold text-xl border-none">Buy Tickets</button>
+        </div>
+        <!-- Best offer section -->
     </main>
     <footer>
 
